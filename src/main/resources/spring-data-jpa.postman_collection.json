@@ -1,0 +1,141 @@
+{
+	"variables": [],
+	"info": {
+		"name": "spring-data-jpa",
+		"_postman_id": "3673bf43-aac6-d1b3-4d52-8d3272bf2ce7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST USER",
+			"request": {
+				"url": "http://localhost:8080/user-service/post",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "dept",
+						"value": "java",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n        \"name\": \"Shiva\",\n        \"address\": {\n        \t\"city\" : \"Gaur\",\n        \t\"state\" : \"UP\"\n        }\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL USERS",
+			"request": {
+				"url": "http://localhost:8080/user-service/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "dept",
+						"value": "java",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n        \"name\": \"Sheetal\",\n        \"address\": {\n        \t\"city\" : \"Ip\",\n        \t\"state\" : \"UP\"\n        }\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"url": "http://localhost:8080/user-service/delete/7",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "dept",
+						"value": "java",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n        \"name\": \"Sheetal\",\n        \"address\": {\n        \t\"city\" : \"Ip\",\n        \t\"state\" : \"UP\"\n        }\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET USER BY ID",
+			"request": {
+				"url": "http://localhost:8080/user-service/get/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "dept",
+						"value": "java",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n        \"name\": \"Sheetal\",\n        \"address\": {\n        \t\"city\" : \"Ip\",\n        \t\"state\" : \"UP\"\n        }\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE USER",
+			"request": {
+				"url": "http://localhost:8080/user-service/update",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "dept",
+						"value": "java",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n\t\t\"userId\": 3,\n        \"name\": \"Sheetal\",\n        \"address\": {\n        \t\"addressId\": 3,\n        \t\"city\" : \"asbkas\",\n        \t\"state\" : \"UP\"\n        }\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
